@@ -1,0 +1,3 @@
+1. Hacer el diagrama relacional de la zapateria.
+2. Hacer el diagrama relacional de la veterinaria.
+3. Aplicar los conceptos de normalizacion.
