@@ -1,0 +1,3 @@
+1. Crear el archivo sql con las sentencias DDL y DML de su proyecto.
+2. Se recomienda crearla acotada a 3 tablas.
+3. Se recomienda hacer una lista de las consultas mas indispensables a necesitar.

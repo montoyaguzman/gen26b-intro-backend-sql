@@ -1,0 +1,4 @@
+1. Instalar postgreSQL.
+2. Dada la clase de uso de pgAdmin crear una tabla y hacer al menos 4 registros con INSERT INTO
+    NOTA 1: Se recomienda hacerlo con la herramienta grafica de pgadmin y consola
+    NOTA 2: Se puede usar chat gpt y comparar los codigos generados entre pgadmin, consola y chatgpt.

@@ -1,0 +1,22 @@
+=tabla = entidad = clase
+atributo = atributo = columna
+objeto = fila
+arreglos = tablas
+
+const student = {
+    name: 'juanito'
+    app: 'perez'
+}
+
+// programacion declarativa
+arr.forEach(element => console.log(element))
+
+// programacion imperativa
+for (let i=0; i<arr.length; i++) {
+    console.log(arr[i])
+}
+
+
+================================================================================================================================================================
+
+POSTGRESQL
