@@ -1,0 +1,17 @@
+{
+  "name": "store",
+  "version": "1.0.0",
+  "description": "Esta es un api muy sencilla para el store (sin scaffold)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "montoyitag",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
