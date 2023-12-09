@@ -20,3 +20,19 @@ for (let i=0; i<arr.length; i++) {
 ================================================================================================================================================================
 
 POSTGRESQL
+
+
+
+
+
+BD => CRUD
+    create
+    read
+    update
+    delete
+
+API => METHODS HTTP
+    get
+    post 
+    put/patch
+    delete

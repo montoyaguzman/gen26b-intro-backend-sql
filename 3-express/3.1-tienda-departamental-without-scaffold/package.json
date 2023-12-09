@@ -4,7 +4,8 @@
   "description": "Esta es un api muy sencilla para el store (sin scaffold)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "./node_modules/nodemon/bin/nodemon.js src/index.js"
   },
   "author": "montoyitag",
   "license": "ISC",
