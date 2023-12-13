@@ -43,3 +43,10 @@ Dependencias
 npm i nodemon o npm i nodemon --save   ===> package.json(dependencias)
 npm i nodemon -D    ===> package.json(devDependencias)
 npm i -g nodemon    ===> node global (su compu)
+
+Partes de c/endpoint
+
+1. Ruta (router)
+2. Obtener datos del request (controller) y el response
+3. Logica de negocio (services)
+4. Acceso a datos (model, data) 
