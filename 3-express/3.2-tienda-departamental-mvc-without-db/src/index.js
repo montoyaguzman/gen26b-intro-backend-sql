@@ -6,11 +6,6 @@ const { routerApi } = require('./routes/main.routes')
 
 app.use(express.json());
 
-// app.get('/', (req, res) => {
-//     console.log('req', req);
-//     res.send('saludos desde express...');
-// });
-
 // ROUTES
 routerApi(app);
 
