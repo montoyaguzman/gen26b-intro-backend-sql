@@ -50,3 +50,13 @@ Partes de c/endpoint
 2. Obtener datos del request (controller) y el response
 3. Logica de negocio (services)
 4. Acceso a datos (model, data) 
+
+
+Conexion a DB
+
+1. Tener una DB
+2. Tener valores para conectarnos a la DB (user, password, port)
+3. .env (variables de entorno) => dotenv (dependencia de npm)
+4. Archivo config
+5. Connection Pool => pg (dependencia de npm)
+
