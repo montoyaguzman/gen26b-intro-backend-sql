@@ -6,12 +6,15 @@ Crear una API que sea un CRUD usando express y postgres.
 
 * Diagrama Relacional de la solución con al menos 3 tablas.
 * Archivo .sql de las sentencias DDL y DML.
+  * Crear DB.
+  * Crear las tablas y constraints (PK y FK).
+  * Datos de pruebas.
 * 5 endpoints (get, post, delete, patch y put).
 * Correcta arquitectura del API.
-* Documentación de uso.
 * Utilizar variables env.
 
 ##### Requerimientos opcionales
 
+* Documentación de uso.
 * Desplegarse a algún servicio en internet.
 * Explicar los siguientes conceptos entidad, relación, cardinalidad, join, relaciones, primary keys y foreign keys.

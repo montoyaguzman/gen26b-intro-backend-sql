@@ -41,6 +41,14 @@ app.patch('/products/:id', (req, res) => {
     res.status(200).json({ message: 'updated success', id: idToModify });
 });
 
+// DELETE
+app.delete('/products/:id', (req, res) => {
+    const idToDelete = req.params.id;
+    const position = products.findIndex(product => product.id === parseInt(idToDelete));
+    products.splice(position, 1);
+    res.status(200).json({ message: 'product deleted', id: idToDelete });
+});
+
 // SERVER
 app.listen(port, () => {
     console.log(`Servidor corriendo en el puerto ${port}`);
