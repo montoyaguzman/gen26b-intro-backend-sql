@@ -36,3 +36,10 @@ API => METHODS HTTP
     post 
     put/patch
     delete
+
+
+Dependencias
+
+npm i nodemon o npm i nodemon --save   ===> package.json(dependencias)
+npm i nodemon -D    ===> package.json(devDependencias)
+npm i -g nodemon    ===> node global (su compu)
