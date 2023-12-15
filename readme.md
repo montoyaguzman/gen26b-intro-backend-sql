@@ -39,22 +39,51 @@ working...
 #### Tips de diseño de una DB
 
 1. Hacer una lista de las entidades fuertes de nuestro negocio.
-2. Hacer una lista de las relaciones entre las entidades fuertes, incluso si una entidad tiene mas de una.
+2. Hacer una lista de las relaciones entre las entidades fuertes, incluso si una entidad tiene mas de una relación.
 3. Representar en el modelo ER las entidades y relaciones del punto 1 y 2. Posteriormente agregar todos los atributos que considere necesarios (sin normalizar hasta que se este seguro con el cliente que es lo que se requiere).
-4. Una vez aprobado el diagrama ER hacer una tabla con datos para c/entidad.
+4. Una vez aprobado el diagrama ER hacer una tabla con datos de prueba para c/entidad.
 5. Aplicar las 3 primeras formas de la normalizacion (en orden) a los datos de prueba del punto 4.
-6. A raiz del punto 5 salen nuevas tablas y nuevas relacionas, generar una lista de ellas.
-7. Hacer el diagrama relacional del punto 6.
+6. A raiz del punto 5 salen nuevas tablas y nuevas relacionas, generar una nueva lista de ellas.
+7. Hacer el diagrama relacional de acuerdo a las entidades y relaciones del punto 6.
 8. Revisar el diagrama relacional con base en las formas normales y en el criterio propio de acuerdo a como funciona el negocio.
 9. Realizar el DML y DDL en SQL.
 
 ### PostgreSQL
 
+A continuación se muestra un breve de resumen de comandos postgres más útiles.
+
+| Comando                                           | Descripcion                                 |
+| ------------------------------------------------- | ------------------------------------------- |
+| psql -h localhost -p 5433 -U postgres -p “pass” | Conexión a PostrgreSQL desde la terminal. |
+| SELECT version();                                 | Ver la versión de PostrgreSQL.             |
+| \\?                                               | Manual de comandos.                         |
+| \h command                                       | Detalle de un comando.                      |
+| \q                                                | Para salir de la terminal PostrgreSQL.      |
+| \l                                                | Ver las base de datos.                      |
+| \c name_db                                        | Seleccionar la DB a usar.                   |
+| \dt                                               | Mostrar la lista de tablas.                 |
+| \d name_table                                     | Mostrar los detalles de la tabla.           |
+| \g                                                | Repetir el último comando.                 |
+| \s                                                | Ver historial de comandos.                  |
+| ctrl + L                                          | Limpiar consola.                            |
+
+### Tipos de datos en PostgreSQL
+
 working...
 
-| Comando | Descripcion |
-| ------- | ----------- |
-|         |             |
+| Tipo de sentencia | Sentencia (query) |
+| ----------------- | ----------------- |
+|                   |                   |
+|                   |                   |
+
+### Queries de SQL
+
+working...
+
+| Tipo de sentencia | Sentencia (query) |
+| ----------------- | ----------------- |
+|                   |                   |
+|                   |                   |
 
 ### API Rest
 
