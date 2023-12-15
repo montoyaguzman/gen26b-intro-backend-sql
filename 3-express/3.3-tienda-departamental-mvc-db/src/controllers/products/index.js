@@ -1,20 +1,24 @@
 const { Products } = require('../../services/products');
 const productObject = new Products();
 
-const get = (req, res) => {
+const get = async (req, res) => {
+    const limit = req.query.limit;
+    const page = req.query.page;
+    console.log('query params: ', limit, page);
     try {
-        const products = productObject.getProducts();
+        const products = await productObject.getProducts();
         res.status(200).json(products);
     } catch (error) {
         res.status(500).json({ message: error });
     }
 };
 
-const create = (req, res) => {
+const create = async (req, res) => {
     try {
         const newProduct = req.body;
-        productObject.createProduct(newProduct);
-        res.status(201).json({ message: 'todo gucci!', data: newProduct });
+        const isRegisterOk = await productObject.createProduct(newProduct);
+        const message = isRegisterOk === true ? 'success' : 'fail';
+        res.status(201).json({ message: message, data: newProduct });
     } catch (error) {
         res.status(500).json({ message: error });
     }

@@ -1,24 +1,52 @@
+const conn = require('../../db/connection');
+
 class Products {
 
     constructor() {
         this.products = []
-        this.generateData();
     }
 
-    generateData() {
-        this.products = [
-            { id: 1, sku: 'sku001', deparment: 'Hogar' },
-            { id: 2, sku: 'sku002', deparment: 'Tecnologia' },
-            { id: 3, sku: 'sku003', deparment: 'Belleza y Salud' }
-        ];
+    async getProducts() {
+
+
+        try {
+            const queryString = `
+                SELECT Products.sku, Products.sellingPayment, Departments.description 
+                    FROM Products INNER JOIN Departments
+                ON Departments.idDeparment = Products.idDeparment;
+            `;
+            const result = await conn.query(queryString);
+            // console.log(result);
+            // console.log(result.rows);
+            return result.rows;
+        } catch (error) {
+            throw new Error(error);
+        }
+
     }
 
-    getProducts() {
-        return this.products;
-    }
+    async createProduct(newProduct) {
 
-    createProduct(newProduct) {
-        this.products.push(newProduct);
+        const {
+            sku,
+            name,
+            purchasePayment,
+            sellingPayment,
+            idDeparment,
+        } = newProduct;
+
+        console.log('service newProduct', sku, name, purchasePayment, sellingPayment, idDeparment);
+
+        try {
+            const queryString = `
+                INSERT INTO Products(sku, name, purchasePayment, sellingPayment, idDeparment) VALUES ($1, $2, $3, $4, $5);
+            `;
+            const params = [sku, name, purchasePayment, sellingPayment, idDeparment];
+            const result = await conn.query(queryString, params);
+            return true;
+        } catch (error) {
+            throw new Error(error);
+        }
     }
 
     modifyProduct(idToModify, newProduct) {
