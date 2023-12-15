@@ -1,0 +1,12 @@
+Dada una tienda de zapatos, genera un modelo relacional que represente el inventario del calzado y las ventas.
+    * Zapatos
+        sku.
+        nombre.
+        modelo.
+        color.
+        tipo.
+
+    * Ventas
+        Fecha.
+        id.
+        cantidad.

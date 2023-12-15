@@ -1,0 +1,10 @@
+Les comparto las siguientes documentacion para que amplien su conocimiento de proyectos back end.
+
+1. Ejemplo de "CRUD REST API with Node.js, Express.js, and PostgreSQL"
+    https://dev.to/justahmed99/crud-rest-api-with-nodejs-expressjs-and-postgresql-57b2
+2. Hacer conexion a DB
+    https://www.linkedin.com/pulse/how-connect-postgres-database-express-step-by-step-guide-eslam-zaid/
+3. Uso de pg y sus queries
+    https://node-postgres.com/features/queries
+4. Otras tecnologias
+    ORM (Sequelize o Knex), Docker
