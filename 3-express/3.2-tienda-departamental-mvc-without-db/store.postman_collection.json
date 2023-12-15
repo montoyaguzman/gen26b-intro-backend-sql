@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/api/v0/products",
+					"raw": "localhost:3000/api/v0/products?limit=100&page=23",
 					"host": [
 						"localhost"
 					],
@@ -21,6 +21,16 @@
 						"api",
 						"v0",
 						"products"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "100"
+						},
+						{
+							"key": "page",
+							"value": "23"
+						}
 					]
 				}
 			},
