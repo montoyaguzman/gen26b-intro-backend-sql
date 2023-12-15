@@ -52,6 +52,15 @@ Partes de c/endpoint
 4. Acceso a datos (model, data) 
 
 
+PARAMETROS EN URL
+
+https://www.tutorialesprogramacionya.com/javascriptya/nodejsya/detalleconcepto.php?punto=13&codigo=13&inicio=0 o localhost:3000/api/store/products?limit=100
+https://pokeapi.co/api/v2/pokemon/pikachu o localhost:3000/api/store/sku001/products
+
+Query Params (?): Establecer filtros y limites a la informacion myservidorsito.com/?startDate=14/12/23&endDate=31/12/23 => delimitadores del tamaño o rango de la info que obtiene
+Request Params (/); Seleccionar elementos especificos con ciertos valores condiciones => selectores de un recurso especifico que cumple ciertas condiciones
+Body: Informar un objeto o crearlo/modicarlo.
+
 Conexion a DB
 
 1. Tener una DB
@@ -60,3 +69,10 @@ Conexion a DB
 4. Archivo config
 5. Connection Pool => pg (dependencia de npm)
 
+NOTAS PARA IMPLEMENTACION DE DB
+persistencia
+cliente, pool, orm
+como buscar codigo sql
+
+POSTMAN vs Front end app
+cors

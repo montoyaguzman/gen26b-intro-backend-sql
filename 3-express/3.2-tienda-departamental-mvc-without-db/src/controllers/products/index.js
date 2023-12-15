@@ -2,6 +2,9 @@ const { Products } = require('../../services/products');
 const productObject = new Products();
 
 const get = (req, res) => {
+    const limit = req.query.limit;
+    const page = req.query.page;
+    console.log('query params: ', limit, page);
     try {
         const products = productObject.getProducts();
         res.status(200).json(products);
